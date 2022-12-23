@@ -1,3 +1,14 @@
-.starter {
-  font-size: 18px;
+@import './reset.scss';
+
+.page {
+  padding: 20px;
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.list-songs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: space-around;
 }

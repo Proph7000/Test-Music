@@ -1,9 +1,5 @@
-# React TypeScript Starter Pack
+# Test Task
 
-To use this template click `Use this template`
+[DEMO LINK](https://proph7000.github.io/Test-Music/)
 
-### Available Scripts
-
-`Deploy` - available to deploy your application to gh-pages
-
-`SCSS Preprocessor` - available to write your styles with modern style language
+Used React+TypeScript

@@ -1,27 +1,27 @@
-import React from 'react';
 import './App.scss';
+import { useState } from 'react';
+import { Song } from './components/song';
+import songs from './api/songs.json';
 
-interface Props {
-  onClick: () => void;
-}
+export const App = () => {
+  const [currentSong, setCurrentSong] = useState<string | null>(null);
+  const [isPlaying, setIsPlaying] = useState(false);
 
-export const Provider: React.FC<Props> = React.memo(
-  ({ onClick, children }) => (
-    <button
-      type="button"
-      onClick={onClick}
-    >
-      {children}
-    </button>
-  ),
-);
-
-export const App: React.FC = () => {
   return (
-    <div className="starter">
-      <Provider onClick={() => ({})}>
-        <TodoList />
-      </Provider>
-    </div>
+    <ul className="list-songs">
+      {songs.map(song => (
+        <li key={song.mp3}>
+          <Song
+            title={song.title}
+            mp3={song.mp3}
+            author={song.author}
+            currentSong={currentSong}
+            setCurrentSong={setCurrentSong}
+            isPlaying={isPlaying}
+            setIsPlaying={setIsPlaying}
+          />
+        </li>
+      ))}
+    </ul>
   );
 };
