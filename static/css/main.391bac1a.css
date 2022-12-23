@@ -1,0 +1,2 @@
+*{box-sizing:border-box;margin:0;padding:0}li{list-style:none}.page{font-family:Arial,Helvetica,sans-serif;padding:20px}.list-songs{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-around}.song{border:1px solid #ccc;display:flex;gap:8px;justify-content:space-between;padding:12px;width:288px}.song__title{font-weight:700}.song__button{cursor:pointer;width:50px}
+/*# sourceMappingURL=main.391bac1a.css.map*/
